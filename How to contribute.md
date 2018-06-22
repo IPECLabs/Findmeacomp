@@ -12,9 +12,25 @@ Since this is our first project together I would like you all to follow some gui
     ```
     sudo apt install git
     ```
-
+* pipenv
+    ```
+    sudo pip3 install pipenv
+    ```
 __NOTE__
 We all prefer linux so these commands only works for linux
+
+## Create a virtual environment
+
+As the name suggest you will have a virtual environment to work this will not effect anything on the outside of your system.
+How to use pipenv.
+
+Whenever you plan to add a new module for using python you should install it using pipenv i.e `pipenv install <name_of_the _module>`
+Ex: `pipenv install requests` or `pipenv install pandas`
+
+Then for running you're python script in that env you should do `pipenv run <name_of_you're_script>` Ex: `pipenv run scraper.py` etc
+
+I will provide a basic pipfile so the basic requirements will be within the file so all you'll have to do is clone the repo then go to the folder and run `pipenv install` and it will install all the required dependency.
+Also I would request you all that whenever you make changes i.e add new module/dependency to the pipfile please let me know about it or add it in PR with different commit.
 
 ## Fork a repo
 
