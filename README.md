@@ -15,3 +15,14 @@ Find our website on: Findmeacomp.in(or whatever)
 * BOOM apki website taiyaar hai
 
 This is a rough roadmap don't take it seriously jo bhai bolega vahi karna tum log !!
+
+
+# How to run the webstie locally
+
+* Make sure you have installed all the dependencies
+* From terminanl go to `Findmeacomp` folder and run
+`export FLASK_APP=Findmeacomp`
+* Then Run:
+    - `flask run`
+
+    And you'll have a link to you're local host hosting the website
