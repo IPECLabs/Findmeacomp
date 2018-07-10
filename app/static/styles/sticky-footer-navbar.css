@@ -1,0 +1,63 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  font-size: 20px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  text-align: center;
+  line-height: 50px; /* Vertically center the text there */
+  background-color: #000000;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 60px 15px 0;
+  padding-top: 60px;
+  text-align: center;
+
+}
+
+input[type=text] {
+    width: 60%;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    font-size: 25px;
+    background-color: white;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 70%;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.fa-heart{
+  color: white;
+}
+
