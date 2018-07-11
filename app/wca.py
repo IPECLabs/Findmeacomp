@@ -1,4 +1,3 @@
-import os
 import requests
 from bs4 import BeautifulSoup
 URL = 'https://www.worldcubeassociation.org'
@@ -12,7 +11,6 @@ def competitions(soup):
     """
 
     data = []
-
     try:
         ul = soup.find("ul", {"class": "list-group"})
         lis = ul.find_all("li")[1:20]
@@ -23,8 +21,7 @@ def competitions(soup):
             detail = li.find("div", {"class": "competition-link"})
             name = detail.text
             short_link = detail.find('a')['href']
-            wca_link = os.path.join(URL, short_link[0:])
-            data.append([date, name, venue, location, wca_link])
+            data.append([date, name, venue, location, URL + short_link])
 
         return data
 
