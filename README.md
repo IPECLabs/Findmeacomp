@@ -21,8 +21,13 @@ This is a rough roadmap don't take it seriously jo bhai bolega vahi karna tum lo
 
 * Make sure you have installed all the dependencies
 * From terminanl go to `Findmeacomp` folder and run
-`export FLASK_APP=Findmeacomp`
+`export FLASK_APP=Findmeacomp.py`
 * Then Run:
     - `flask run`
 
     And you'll have a link to you're local host hosting the website
+
+__NOTE__
+
+If you are using pipenv then instead of running `flask run` use
+`pipenv run flask run`
