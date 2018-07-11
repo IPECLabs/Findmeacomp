@@ -33,6 +33,7 @@ body > .container {
 
 }
 
+
 input[type=text] {
     width: 60%;
     box-sizing: border-box;
@@ -48,13 +49,13 @@ input[type=text] {
 }
 
 input[type=text]:focus {
-    width: 70%;
+    /*width: 70%;*/
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
 }
 
 .footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .fa-heart{
