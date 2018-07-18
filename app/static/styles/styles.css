@@ -43,7 +43,7 @@ input[type=text] {
     background-color: white;
     background-repeat: no-repeat;
     text-align: center;
-    padding: 12px 20px 12px 40px;
+    padding: 10px 10px 12px 40px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
 }
@@ -58,7 +58,18 @@ input[type=text]:focus {
   padding-left: 10px;
 }
 
-.fa-heart{
+.fa-heart {
   color: white;
 }
 
+p {
+  color: black;
+  text-align: left;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px 40px 0px 0;
+  font-size: 80px;
+  font-weight: bold;
+}
