@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 requests = "*"
 flask = "*"
+"bs4" = "*"
+elasticsearch = "*"
 
 [requires]
 python_version = "3.5"
