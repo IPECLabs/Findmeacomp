@@ -32,20 +32,20 @@
     <dir class="container">
         <table class="table table-striped table-bordered">
             <thead ">
-            <tr>
-                <th scope="col ">Date</th>
-                <th scope="col ">Name</th>
-                <th scope="col ">Venue</th>
-                <th scope="col ">Location</th>
+            <tr class="table-info">
+                <th scope="col"  >Date</th>
+                <th scope="col" >Name</th>
+                <th scope="col" >Venue</th>
+                <th scope="col" >Location</th>
             </tr>
         </thead>
         <tbody>
         {% for row in data %}
             <tr scope="row ">
-                <td>{{row.0}}</td>
+                <td >{{row.0}}</td>
                 <td ><a href="{{row.4}} ">{{row.1}}</a></td>
-                <td>{{row.2}}</td>
-                <td>{{row.3}}</td>
+                <td >{{row.2}}</td>
+                <td >{{row.3}}</td>
             </tr>
         {% endfor %}
         </tbody>
