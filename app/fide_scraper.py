@@ -30,7 +30,7 @@ def getList(soup, city=None):
     myList = [tr.text for tr in trs]
     myList = [x.split('\xa0') for x in myList]
     myList2 = [y for x in myList for y in x if y != ""]
-    new_list = [myList2[i:i+5] for i in range(0, len(myList2), 5)]
+    new_list = [myList2[i:i + 5] for i in range(0, len(myList2), 5)]
     nlist = []
 
     for i in new_list:
@@ -42,15 +42,15 @@ def getList(soup, city=None):
 
         else:
             return new_list
-
     return nlist
 
 
 def main():
-    city =input('Enter your city name! ')
+    city = input('Enter your city name! ')
     country = getCountry(city)
     countryCode = getCountryCode(country.lower())
-    url = 'https://ratings.fide.com/tournament_list.phtml?moder=ev_code&country={}'.format(countryCode)
+    url = 'https://ratings.fide.com/tournament_list.phtml?moder=ev_code&country={}'.format(
+        countryCode)
     res = requests.get(url)
     soup = BeautifulSoup(res.content, "lxml")
     List = getList(soup, city)
