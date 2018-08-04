@@ -30,17 +30,18 @@
         </nav>
     </header>
     <dir class="container">
-        <table class="table table-striped table-bordered">
-            <thead ">
-            <tr class="table-info">
-                <th scope="col"  >Date</th>
-                <th scope="col" >Name</th>
-                <th scope="col" >Venue</th>
-                <th scope="col" >Location</th>
+        <div class="table-responsive-md">
+            <table class="table table-striped table-bordered">
+                <thead ">
+            <tr class="table-info ">
+                <th scope="col "  >Date</th>
+                <th scope="col " >Name</th>
+                <th scope="col " >Venue</th>
+                <th scope="col " >Location</th>
             </tr>
         </thead>
         <tbody>
-        {% for row in data %}
+        {% for row in wca %}
             <tr scope="row ">
                 <td >{{row.0}}</td>
                 <td ><a href="{{row.4}} ">{{row.1}}</a></td>
@@ -50,6 +51,27 @@
         {% endfor %}
         </tbody>
     </table>
+    </div>
+    <div class="table-responsive-md ">
+    <table class="table table-striped table-bordered ">
+            <thead ">
+                    <tr class="table-info">
+                        <th scope="col">Date</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">City</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in chess %}
+                    <tr scope="row">
+                        <td>{{row.2}}</td>
+                        <td><a href="{{row.3}} ">{{row.0}}</a></td>
+                        <td>{{row.1}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
     </dir>
 </body>
 
