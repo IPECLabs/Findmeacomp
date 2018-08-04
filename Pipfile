@@ -8,6 +8,8 @@ requests = "*"
 flask = "*"
 "bs4" = "*"
 elasticsearch = "*"
+geopy = "*"
+lxml = "*"
 
 [requires]
 python_version = "3.5"
