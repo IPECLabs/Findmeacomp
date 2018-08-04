@@ -1,9 +1,11 @@
+import os
 import json
 import requests
 
 from bs4 import BeautifulSoup
 from geopy.geocoders import Nominatim
 
+THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 URL = 'https://ratings.fide.com/'
 
 
@@ -17,7 +19,8 @@ def getCountry(city):
 
 def getCountryCode(country):
     """Converts country to country code using CountryCodes.json"""
-    with open('CountryCodes.json') as f:
+    path = os.path.join(THIS_DIR, 'CountryCodes.json')
+    with open(path) as f:
         data = json.load(f)
     for d in data:
         if d['name'].lower() == country:
@@ -55,7 +58,8 @@ def main():
         List = getList(soup, city)
         print(List)
     else:
-        pass
+        print("City to daal de andhe")
+
 
 if __name__ == '__main__':
     main()
