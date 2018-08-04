@@ -45,21 +45,13 @@ def getList(soup, city=None):
     return list_
 
 
-def main():
+def chess(city: str):
 
-    city = input('Enter your city name! ')
-    if city:
-        country = getCountry(city)
-        countryCode = getCountryCode(country.lower())
-        url = 'https://ratings.fide.com/tournament_list.phtml?moder=ev_code&country={}'.format(
-            countryCode)
-        res = requests.get(url)
-        soup = BeautifulSoup(res.content, "lxml")
-        List = getList(soup, city)
-        print(List)
-    else:
-        print("City to daal de andhe")
-
-
-if __name__ == '__main__':
-    main()
+    country = getCountry(city)
+    countryCode = getCountryCode(country.lower())
+    url = 'https://ratings.fide.com/tournament_list.phtml?moder=ev_code&country={}'.format(
+        countryCode)
+    res = requests.get(url)
+    soup = BeautifulSoup(res.content, "lxml")
+    competitions = getList(soup, city)
+    return competitions
