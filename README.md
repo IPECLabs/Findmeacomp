@@ -1,27 +1,21 @@
 # Findmeacomp
 
 This is a small website on which we have worked to get the basic idea of how web dev works.
+This is written in python and flask
 
-Find our website on: Findmeacomp.in(or whatever)
+# Run locally
 
-# Roadmap
+* You need python3
 
-* Create the basic layout of whole website
-* Work on the scrapers for all the websites
-* test all the scrapers
-* Setup the basic front end
-* link scrapers with front end
-* write docs and tests for the code
-* BOOM apki website taiyaar hai
+* Clone the repo: `git clone https://github.com/mzfr/Findmeacomp`
 
-This is a rough roadmap don't take it seriously jo bhai bolega vahi karna tum log !!
+* Change directory - `cd Findmeacomp/`
 
+* Install all the dependencies:
+    - `pip install -r requirements.txt`
 
-# How to run the webstie locally
+* Set Flask variable: `export FLASK_APP=Findmeacomp.py`
 
-* Make sure you have installed all the dependencies
-* From terminanl go to `Findmeacomp` folder and run
-`export FLASK_APP=Findmeacomp.py`
 * Then Run:
     - `flask run`
 
