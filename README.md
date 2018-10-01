@@ -1,7 +1,6 @@
 # Findmeacomp
 
-This is a small website on which we have worked to get the basic idea of how web dev works.
-This is written in python and flask
+**Findmeacomp** is a our first ever website that [we](https://github.com/IPECLabs) have worked on to get the basic idea of how web dev works. It will search for upcoming competition events near you and display it onto the screen.
 
 # Run locally
 
